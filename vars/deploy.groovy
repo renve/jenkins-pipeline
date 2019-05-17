@@ -1,3 +1,3 @@
 void deployBackend() {
-    sh("echo 'Deploying ...'")
+    sh("kubectl apply -f ./deployment/deployment.yaml")
 }
