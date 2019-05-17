@@ -1,3 +1,3 @@
-void buildImage() {
-    def sampleAppImage = docker.build("sample-app:1.0.0") 
+void buildImage(String imageName) {
+    def sampleAppImage = docker.build(imageName) 
 }
