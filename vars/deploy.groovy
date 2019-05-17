@@ -1,3 +1,3 @@
 void deployBackend() {
-    sh("kubectl apply -f ./deployment/deployment.yaml")
+    sh(" KUBECONFIG='/var/jenkins_home/cluster.config' kubectl apply -f ./deployment/deployment.yaml")
 }
